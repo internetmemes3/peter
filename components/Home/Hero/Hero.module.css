@@ -1,0 +1,132 @@
+
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 580px;
+  width: 100%;
+  background: linear-gradient(to bottom, #28a4c880, #40a4c8), url('/assets/images/Peterbg.png') no-repeat left center;
+  background-size: 30%
+}
+
+  
+  .content {
+    flex: 0.7; 
+    
+  }
+
+  @media only screen and (max-width: 655px) {
+    .main {
+      background-size: 177% 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: auto;
+      width: 100vw;
+    }
+  }
+  
+  .container {
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 655px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 1800px) {
+    .container {
+      width: 0%;
+    }
+  }
+  
+  .heading {
+    font-size: 70px;
+    line-height: 1.3;
+    font-weight: 800;
+    color: rgb(203, 87, 238);
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  @media only screen and (max-width: 655px) {
+    .heading {
+      font-size: 60px;
+    }
+  }
+  
+  .main:hover .heading {
+    text-shadow: 0 0 10px rgb(222, 69, 253), 0 0 20px #fff, 0 0 40px #fff;
+    transition-duration: 0.5s;
+  }
+  
+
+  .peter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  }
+  
+  .button span {
+    margin-left: 15px;
+  }
+  
+  @media only screen and (max-width: 655px) {
+    .button {
+      font-size: 11px;
+      padding: 10px 20px;
+      border-radius: 12px;
+      top: 34%;
+    right: 34%;
+    transform: translateY(10%);
+    width: 120px;
+    }
+    .button img {
+      width: 20px;
+      height: 20px;
+    }
+  
+    .button span {
+      margin-left: 10px;
+    }
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+
+  .ptext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 10px; 
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 40px;
+  }
+
+  .pdescription {
+    font-family: "Creepster", system-ui;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+ 

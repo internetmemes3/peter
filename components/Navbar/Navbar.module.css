@@ -1,0 +1,150 @@
+.navbar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+    backdrop-filter: blur(5px);
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .container {
+      display: none;
+    }
+  }
+  
+  .linksHolder {
+    display: flex;
+    align-items: center;
+    height: 50px;
+  }
+  
+  .linksHolder li {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .linksHolder li:hover {
+    color: #f8c0f7; 
+    transform: rotate(5deg) scale(1.1); 
+  }
+  
+  
+  
+  .linksHolder li:hover {
+    animation: bounce 0.5s ease-in-out; 
+  }
+  
+  
+ 
+  
+  .rightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .socialHolder {
+    width: 140px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .socialHolder img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+  
+  
+  .button:hover {
+    opacity: 0.8;
+    transition-duration: 0.3s;
+  }
+  
+  .button span {
+    margin-left: 10px;
+  }
+  
+  .mobileMenu {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .mobileMenu {
+      display: block;
+    }
+  
+    .mobileMenuContent {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100px;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  
+  .mintButton {
+    background: #0088cc; 
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin-right: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    color: white; 
+    border: 2px solid #bedde0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+  
+  .mintButton:hover {
+    transform: rotate(5deg) scale(1.1);
+    background: #abe9ef; 
+  }
+  
+  @keyframes wobble {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 60% {
+      transform: translateX(-5px);
+    }
+    40%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .mintButton:hover {
+    animation: wobble 0.5s ease-in-out infinite alternate;
+  }
+  
+  .logo {
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .rounded {
+    border-radius: 50%;
+  }
