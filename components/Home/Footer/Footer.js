@@ -44,7 +44,7 @@ const Footer = () => {
             <a data-aos="flip-right" data-aos-duration="1000"
               target="_blank"
               rel="noreferrer"
-              href="https://t.me/petercoinsol"
+              href="https://t.me/petercoinsolportal"
               title="Join our Telegram"
             >
               <Image className={styles.circleButton}

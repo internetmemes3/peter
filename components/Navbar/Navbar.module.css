@@ -123,3 +123,13 @@
     box-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;;
     transition-duration: 0.5s;
   }
+  
+  .announcing {
+    background-color: #cbf045;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .sliding {
+    white-space: nowrap;
+    padding-left: 80px;
+  }

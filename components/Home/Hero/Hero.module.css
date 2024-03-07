@@ -20,6 +20,7 @@
     justify-content: center;
     gap: 20px; 
     margin-top: 20px;
+    margin-left: 10px;
    }
    
    .circleButton {
@@ -83,6 +84,7 @@
     .peter {
       width: 40%;
     }
+    
   }
   
   @media screen and (max-width: 990px) {
@@ -129,4 +131,45 @@
       margin-left: 10px;
       margin-right: 10px;
     }
+
+    
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.305), 0 0 10px #fff, 0 0 20px #fff;
+    box-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;;
+    transition-duration: 0.5s;
+  }
+
+  .joinbutton {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid white;
+    border-color: white;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .joinbutton:hover {
+    text-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;
+    box-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;;
+    transition-duration: 0.5s;
   }

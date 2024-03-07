@@ -12,58 +12,8 @@ const Hero = () => {
       <p className={styles.pdescription}> The most legendary memecoin in existence! <br></br> The dogs & frogs had their days, <br></br> now it's time for Peter to take reign.</p>
 
       <div  className={styles.iconContainer}>
-              <a data-aos="flip-right" data-aos-duration="1000"
-                target="_blank"
-                rel="noreferrer"
-                href="https://twitter.com/petercoinsol"
-                title="Follow us on X/Twitter"
-              >
-                <Image className={styles.circleButton}
-                  alt="Follow us on X/Twitter"
-                  src="/assets/images/x-twitter-icon.png"
-                  height={60}
-                  width={60}
-                />
-              </a>
-            <a data-aos="flip-right" data-aos-duration="1000"
-              target="_blank"
-              rel="noreferrer"
-              href="https://t.me/petercoinsol"
-              title="Join our Telegram"
-            >
-              <Image className={styles.circleButton}
-                src="/assets/images/telegram-icon.png"
-                alt="telegram"
-                width={60}
-                height={60}
-              />
-            </a>
-            <a data-aos="flip-right" data-aos-duration="1000"
-                target="_blank"
-                rel="noreferrer"
-                href="https://solscan.io/address/5ojwpsvCUZ3CNkYNfR5Dn16EXrMRYfU5ZoLiLND9Eac6"
-                title="Solscan"
-              >
-                <Image className={styles.circleButton}
-                  alt="Solscan"
-                  src="/assets/images/Solscan.png"
-                  height={60}
-                  width={60}
-                />
-              </a>
-              <a data-aos="flip-right" data-aos-duration="1000"
-                target="_blank"
-                rel="noreferrer"
-                href="https://beta.pinksale.finance/solana/launchpad/61Fdd5gzrZYdoEXV8Fwpmk9bptAMqmYe6Rv5AUJ4EfAa"
-                title="Pinksale"
-              >
-                <Image className={styles.circleButton}
-                  alt="Pinksale"
-                  src="/assets/images/Pinksale.png"
-                  height={60}
-                  width={60}
-                />
-              </a>
+      <a href="https://beta.pinksale.finance/solana/launchpad/61Fdd5gzrZYdoEXV8Fwpmk9bptAMqmYe6Rv5AUJ4EfAa" target="_blank" className={styles.button}>Buy On Pinksale</a>
+      <a href="https://t.me/petercoinsolportal" target="_blank" className={styles.joinbutton}>Join Community</a>
             </div>
       </div>
       

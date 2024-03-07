@@ -1,13 +1,18 @@
-import React, {UseState} from "react";
+import React, {useEffect, useRef} from "react";
 import Image from "next/image";
 import {Link} from 'react-scroll';
 import RenderMobileMenu from "./MobileMenu";
 import styles from "./Navbar.module.css";
+import Marquee from 'react-fast-marquee';
+
 
 
 const Navbar = () => {
+  
   return (
+    
     <header className={styles.navbar}>
+      
       <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Protest+Riot&display=swap" rel="stylesheet"></link>
       <div className={styles.container}>
       <div className={styles.logo}>
@@ -45,16 +50,31 @@ const Navbar = () => {
  Contact
     </Link>
   </li>
+  
 </ul>
+
       </div>
-      <a href="https://beta.pinksale.finance/solana/launchpad/61Fdd5gzrZYdoEXV8Fwpmk9bptAMqmYe6Rv5AUJ4EfAa" target="_blank" className={styles.button}>Buy $PETER</a>
+      
       </div>
+     
+      <div className={styles.announcing}>
+      <Marquee speed={70} autoFill={true}>
+    <div className={styles.sliding} >
+        <span className={styles.announcementtext}> $PETER Presale is LIVE on Pinksale </span>
+      </div>
+      </Marquee>
+      </div>
+
       <div className={styles.mobileMenu}>
+        
         <div className={styles.mobileMenuContent}>
           <RenderMobileMenu />
         </div>
+        
       </div>
+      
     </header>
+    
   );
 };
 

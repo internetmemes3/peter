@@ -51,8 +51,7 @@ const MobileMenu = () => {
                  <li >
                    <Link to="contact" spy={true} smooth={true} offset={0} duration={500} onClick={closeNavbar} > Contact </Link>
                  </li>
-                 <a href="https://beta.pinksale.finance/solana/launchpad/61Fdd5gzrZYdoEXV8Fwpmk9bptAMqmYe6Rv5AUJ4EfAa" target="_blank" className={styles.button}>Buy $PETER</a>
-             </ul>)}
+                   </ul>)}
 
            
       </div>
