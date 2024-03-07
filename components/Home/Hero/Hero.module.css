@@ -1,14 +1,12 @@
 
 .main {
-  position: relative;
+  position:relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
-  min-height: 580px;
+  min-height: 680px;
   width: 100%;
-  background: linear-gradient(to bottom, #28a4c880, #40a4c8), url('/assets/images/Peterbg.png') no-repeat left center;
-  background-size: 30%
+  background: linear-gradient(to bottom, #28a4c880, #0097b2);
 }
 
   
@@ -17,52 +15,21 @@
     
   }
 
-  @media only screen and (max-width: 655px) {
-    .main {
-      background-size: 177% 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: auto;
-      width: 100vw;
-    }
-  }
-  
-  .container {
-    width: 99%;
-    margin: 0 auto;
+  .iconContainer {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
-  }
-  
-  @media only screen and (max-width: 655px) {
-    .container {
-      width: 90%;
-    }
-  }
-  
-  @media only screen and (min-width: 1800px) {
-    .container {
-      width: 0%;
-    }
-  }
-  
-  .heading {
-    font-size: 70px;
-    line-height: 1.3;
-    font-weight: 800;
-    color: rgb(203, 87, 238);
-    margin-bottom: 10px;
-    transition-duration: 0.5s;
-  }
-  
-  @media only screen and (max-width: 655px) {
-    .heading {
-      font-size: 60px;
-    }
-  }
-  
+    gap: 20px; 
+    margin-top: 20px;
+   }
+   
+   .circleButton {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+   }
+
   .main:hover .heading {
     text-shadow: 0 0 10px rgb(222, 69, 253), 0 0 20px #fff, 0 0 40px #fff;
     transition-duration: 0.5s;
@@ -71,39 +38,10 @@
 
   .peter {
   display: flex;
-  justify-content: center;
-  align-items: center;
- 
+  justify-content: right;
+  align-items: right;
   }
   
-  .button span {
-    margin-left: 15px;
-  }
-  
-  @media only screen and (max-width: 655px) {
-    .button {
-      font-size: 11px;
-      padding: 10px 20px;
-      border-radius: 12px;
-      top: 34%;
-    right: 34%;
-    transform: translateY(10%);
-    width: 120px;
-    }
-    .button img {
-      width: 20px;
-      height: 20px;
-    }
-  
-    .button span {
-      margin-left: 10px;
-    }
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-    transition-duration: 0.3s;
-  }
 
   .ptext {
     display: flex;
@@ -112,21 +50,83 @@
     font-size: 4rem;
     text-align: center;
     border-radius: 10px; 
-    font-family: "Rubik Doodle Shadow", system-ui;
+    font-family: "Protest Riot", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #ffffff;
     margin-left: 40px;
   }
 
   .pdescription {
-    font-family: "Creepster", system-ui;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #ffffff;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 120px;
   }
- 
+
+  
+  @media screen and (max-width: 1200px) {
+    .main {
+      min-height: 500px; 
+      margin-top: 50px;
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .peter {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .main {
+      background-size: 50%; 
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    .main {
+      min-height: 500px; 
+    }
+    
+    .content {
+      flex: 1; 
+      
+    }
+    
+    .peter {
+      flex-direction: column-reverse; 
+      align-items: center; 
+    }
+  
+    .ptext {
+      font-size:  3rem; 
+      margin-left:  20px; 
+    }
+  
+    .pdescription {
+      font-size:  24px; 
+      margin-left:  60px; 
+    }
+  }
+  
+  @media screen and (max-width: 570px) {
+    .ptext {
+      font-size: 3rem; 
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .pdescription {
+      font-size: 17px; 
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }

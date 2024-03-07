@@ -11,11 +11,10 @@
   }
   
   .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   @media only screen and (max-width: 900px) {
@@ -27,22 +26,27 @@
   .linksHolder {
     display: flex;
     align-items: center;
+    gap: 40px;
+    margin: 10px;
+    margin-left: 70px;
     height: 50px;
   }
   
   .linksHolder li {
     color: #fff;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
     cursor: pointer;
-    margin: 0 8px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
   }
   
   .linksHolder li:hover {
-    color: #f8c0f7; 
+    color: #1db7ef; 
     transform: rotate(5deg) scale(1.1); 
   }
   
@@ -51,38 +55,7 @@
   .linksHolder li:hover {
     animation: bounce 0.5s ease-in-out; 
   }
-  
-  
- 
-  
-  .rightContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .socialHolder {
-    width: 140px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .socialHolder img:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    transition-duration: 0.3s;
-  }
-  
-  
-  .button:hover {
-    opacity: 0.8;
-    transition-duration: 0.3s;
-  }
-  
-  .button span {
-    margin-left: 10px;
-  }
-  
+
   .mobileMenu {
     display: none;
   }
@@ -102,28 +75,6 @@
     }
   }
   
-  
-  .mintButton {
-    background: #0088cc; 
-    padding: 10px 10px;
-    border-radius: 20px;
-    margin-right: 12px;
-    margin-top: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    color: white; 
-    border: 2px solid #bedde0; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
-  }
-  
-  .mintButton:hover {
-    transform: rotate(5deg) scale(1.1);
-    background: #abe9ef; 
-  }
-  
   @keyframes wobble {
     0%, 100% {
       transform: translateX(0);
@@ -136,15 +87,39 @@
     }
   }
   
-  .mintButton:hover {
-    animation: wobble 0.5s ease-in-out infinite alternate;
-  }
+ 
   
   .logo {
     align-items: left;
     justify-content: left;
+    display: flex;
+  }
+
+
+  .navtext {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #0097b2;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
   }
   
-  .rounded {
-    border-radius: 50%;
+  .button:hover {
+    text-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;
+    box-shadow: 0 0 10px rgb(69, 232, 253), 0 0 10px #fff, 0 0 20px #fff;;
+    transition-duration: 0.5s;
   }

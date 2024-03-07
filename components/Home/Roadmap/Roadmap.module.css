@@ -1,6 +1,6 @@
 .main {
     display: block;
-    background: linear-gradient(to top, #285663, #40a4c8);
+    background: #0097b2;
     min-height: 400px;
     height: auto;
     width: auto;
@@ -8,37 +8,32 @@
   }
 
 
-.card {
+  .card {
     background: rgba(255, 255, 255, 0.45);
     padding: 10px;
-    border-radius: 14px;
-    width: 110%;
+    border-radius: 4px 14px 4px 14px;
     background-origin: border-box;
     background-clip: content-box, border-box;
+    box-shadow: 0px 4px 40px rgb(255, 255, 255);
+  }
+
+
+  .cardContent {
+    padding: 20px 20px !important;
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
   }
   
-  .cardContent {
-    display: flex;
-   
-  }
-
-.cardContent.leftAlign {
-    padding: 20px 20px 20px 20px;
-    grid-template-columns: 98% 10%;
-  }
-
-  .cardContent p {
-    font-size: 14px;
-    letter-spacing: 0.9px;
-    color: #fff;
-    line-height: 1.5;
-  }
 
   .content {
-    width: auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .headingHolder {
@@ -49,14 +44,13 @@
 
   .heading {
     font-weight: 800;
-    font-size: 56px;
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    color: #fff;
     text-align: center;
     position: relative;
-    padding-left: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Patua One", serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
   .container {
@@ -65,12 +59,72 @@
     justify-content: center;
   }
 
-  .center {
+  .peterimg {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 10%;
+    margin-right: 2%;
+  }
+
+
+
+  @media screen and (max-width: 1200px) {
+    .heading {
+      font-size: 50px; 
+    }
+
+    .peterimgs {
+      width: 70%;
+      height: 70%;
+    }
+  
+    .cardContent {
+      font-size: 20px; 
+    }
+
+    .container {
+      flex-direction: column-reverse;
+    }
+
   }
   
-  .imageContainer {
-    margin-right: 20px;
+  @media screen and (max-width: 990px) {
+    .heading {
+      font-size: 40px; 
+    }
+  
+    .cardContent {
+      font-size: 18px; 
+    }
+  }
+  
+  @media screen and (max-width: 760px) {
+    .heading {
+      font-size: 30px; 
+    }
+  
+    .cardContent {
+      font-size: 16px; 
+    }
+  }
+  
+  @media screen and (max-width: 570px) {
+    .heading {
+      font-size: 20px; 
+    }
+  
+    .cardContent {
+      font-size: 14px; 
+    }
+
+    .peterimgs {
+      width: 70%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .peterimg {
+      justify-content: center;
+      align-items: center;
+    }
+
   }

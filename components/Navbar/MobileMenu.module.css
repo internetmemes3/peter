@@ -1,7 +1,7 @@
 .menuToggle {
     display: block;
     position: relative;
-    top: -66px;
+    top: -104px;
     left: 90px;
     z-index: 1;
     -webkit-user-select: none;
@@ -10,13 +10,15 @@
   
   .menuToggle a {
     text-decoration: none;
-    color: #232323;
+    color: #ffffff;
     transition: color 0.3s ease;
   }
   
   .menuToggle a:hover {
     color: tomato;
   }
+
+  
   
   .menuToggle input {
     display: block;
@@ -26,8 +28,8 @@
     top: -7px;
     left: -5px;
     cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
+    opacity: 0; 
+    z-index: 2; 
     -webkit-touch-callout: none;
   }
   
@@ -70,7 +72,7 @@
   
   .menu {
     position: absolute;
-    top: 80px;
+    top: 94px;
     width: 100vw;
     height: 100vh;
     padding: 50px;
@@ -78,20 +80,26 @@
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+    backdrop-filter: blur(5px);
   }
   
   .menu.active {
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    
   }
   
   .menu li {
     padding: 10px 0;
     font-size: 22px;
+    
   }
   
   .menuToggle input:checked ~ ul {
     transform: none;
+    
   }
   
   .Hamburger {
@@ -101,27 +109,32 @@
   cursor: pointer;
   
   }
-  .button {
-    background: #5865f2;
-    border-radius: 12px;
-    padding: 8px 20px;
-    display: flex;
-    align-items: center;
-    width: 222px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    transition-duration: 0.3s;
-    
-  }
   
-  .mintButton {
-    background: lightgrey;
-    padding: 10px 2px;
-    border-radius: 12px;
-    margin-right: 2px;
-    font-weight: 600;
-    text-transform: uppercase;
+  .logo {
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .navtext {
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #0097b2;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
   }

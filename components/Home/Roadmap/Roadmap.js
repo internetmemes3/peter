@@ -1,5 +1,3 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 import styles from "./Roadmap.module.css";
 import Image from 'next/image';
 const Roadmap = () => {
@@ -14,64 +12,36 @@ const Roadmap = () => {
         position: 'relative',
       };
 
-      const controls = useAnimation();
-      const [ref, inView] = useInView();
-    
-      if (inView) {
-        controls.start({
-          opacity: 1,
-          y: 0,
-        });
-      }
-
   return (
-    <div id="Roadmap" className={styles.main}>
-      
+    <section id="Roadmap" className={styles.main}>
+      <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"></link>
         <div style={LineStyle} > </div>
       <div className={styles.headingHolder}>
         
-        <h1 className={styles.heading}>
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" className={styles.heading}>
           Roadmap
         </h1>
 
       </div>
-     
+      <div className={styles.container}>
+      <div data-aos="fade-right" data-aos-duration="1000" className={styles.peterimg}>
+        <Image className={styles.peterimgs} src="/assets/images/Peterchart.png" alt="peter coin" width={400} height={410} />
+      </div>
       <div className={styles.content}>
-        <div className={styles.container}>
-          <div className={styles.imageContainer}>
-          <Image
-              src="/assets/images/Peter2.png" 
-              alt="let's make peter great again"
-              width={400} 
-              height={400}
-            />
-          </div>
-          <div className={`${styles.card} ${styles.center}`}>
-            <div className={`${styles.cardContent} ${styles.leftAlign}`}>
-              <div>
-              <motion.p 
-                  ref={ref}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={controls}
-                  transition={{ duration: 0.5 }}
-                   > 
-- Phase 1: $PETER Announcement & Presale <br></br>
-- Phase 2: Listing, Vibe & HODL<br></br>
-- Phase 3: $PETER Coin Takeover                  </motion.p>
-              </div>
-            </div>
-          </div>
-          <div className={styles.imageContainer}>
-          <Image
-              src="/assets/images/Peter1.png" 
-              alt="let's make peter great again"
-              width={400} 
-              height={400}
-            />
-          </div>
+        <div data-aos="fade-down" data-aos-duration="1000" className={styles.card}>
+          <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="linear" className={styles.cardContent}>
+          • Phase 1: Announcement & Launch <br></br>
+          • Phase 2: Vibe and HODL<br></br>
+          • Phase 3: $Peter Coin Takeover
+          <br></br>  <br></br> No bullshit, it’s that simple.  </div>
         </div>
+        
+      </div>
+      <div className={styles.peterimg} data-aos="fade-down-left" data-aos-duration="1000">
+        <Image className={styles.peterimgs} src="/assets/images/Peter1.png" alt="peter coin" width={400} height={400} />
       </div>
     </div>
+    </section>
   );
 };
 

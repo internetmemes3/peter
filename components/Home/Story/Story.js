@@ -1,5 +1,8 @@
 import Image from "next/image";
 import styles from "./Story.module.css";
+import { motion } from 'framer-motion';
+
+
 
 const Story = () => {
   const LineStyle = {
@@ -10,57 +13,38 @@ const Story = () => {
     margin: '10px 0',
     position: 'relative',
   };
+
+  
     return (
       <section id="story" className={styles.main}>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet"></link>
+        
         <div style={LineStyle} > </div>
-        <h1 className={styles.heading}>
+        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" className={styles.heading}>
 Tokenomics        </h1>
         
-        <div className={styles.circleContainer}>
-      <div className={styles.imageContainer}>
-        <img src="assets/images/petersilver.png" alt="Peter Silver Coin" />
-        <div className={styles.titleBox}>
-        <h2>Total Supply</h2>
+<div className={styles.container}>
+<div data-aos="fade-right" data-aos-duration="1000" className={styles.peterimg}>
+        <Image className={styles.peterimgs} src="/assets/images/Peter2.png" alt="Make Peter Great Again" width={500} height={500} />
       </div>
-      <div className={styles.textBox}>
-        <p>1,000,000,000</p>
-      </div>
-      </div>
+      <div className={styles.content}>
       
-      <div className={styles.imageContainer}>
-        <img src="assets/images/totalsupply.png" alt="Fees" />
-        <div className={styles.titleBox}>
-        <h2>Fees</h2>
-      </div>
-      <div className={styles.textBox}>
-        <p>0/0</p>
-      </div>
-      </div>
-      <div className={styles.imageContainer}>
-        <img src="assets/images/tokenaddress.png" alt="Token Address" />
-        <div className={styles.titleBox}>
-        <h2>Token Address</h2>
-      </div>
-      <div className={styles.textBox}>
-        <p>0x0000</p>
-      </div>
-      </div>
-      <div className={styles.imageContainer}>
-        <img src="assets/images/LP.png" alt="Liquidity Pool" />
-        <div className={styles.titleBox}>
-        <h2>Liquidity Pool</h2>
-      </div>
-      <div className={styles.textBox}>
-        <p>100% Liquidity Burnt</p>
-      </div>
-      </div>
-      <div className={styles.centerImageContainer}>
-        <img src="assets/images/peterpc.gif" alt="Peter work" />
+        <div data-aos="zoom-in" data-aos-duration="1000" className={styles.titleBox}>
+          <p>Total Supply</p>
+        </div>
+
+        <div data-aos="zoom-in" data-aos-duration="1000" className={styles.textBox}>
+          <p>1,000,000,000</p>
+        </div>
+        <div data-aos="fade-down" data-aos-duration="1000" className={styles.card}>
+          <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-easing="linear" className={styles.cardContent}>
+Say NO to taxes, YES to Locked LP tokens forever (+100 Years) & Contract ownership is renounced for a truly decentralized experience, <br></br> GOODBYE to centralized control!
+</div>
+        </div>
       </div>
     </div>
-        
-
-                </section>
+  </section>
   );
 };
 

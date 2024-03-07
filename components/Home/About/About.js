@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./About.module.css";
 
+
 const About = () => {
   const LineStyle = {
     width: '100%',
@@ -15,43 +16,39 @@ const About = () => {
   
   return (
     <section id="about" className={styles.main}>
-      <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Sriracha&display=swap" rel="stylesheet"></link>
-      <div style={LineStyle}>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></link>      <div style={LineStyle}>
      
       </div>
-      <h1 className={styles.title}>
+      <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" className={styles.title}>
          About
         </h1>
       <div className={styles.container}>
+      <div data-aos="fade-right" data-aos-duration="1000" className={styles.imgContainer}>
         
-          <div className={styles.rightPanel}>
-            <h2 className={styles.heading}>LET'S RIDE THE BULL RUN
-            <Image
-        src="/assets/images/Peter3.png"
-        width={100}
-        height={100}
-        /></h2> 
-            <h3 className={styles.subHeading}>
-            Once upon a time in the digital realm... ! 🤪
-            </h3>
+        <Image className={styles.img}
+          src="/assets/images/peter-bull.png"
+          alt="Discord"
+          width={600}
+          height={600}
+          style={{
+            width: '100%', 
+            height: 'auto', 
+          }}
+        />
+      
+    </div>
+          <div data-aos="fade-left" data-aos-duration="1000" >
+          
+            <h2 className={styles.heading}>INTRODUCING $PETER COIN <br></br>THE KING OF CRYPTO MEMECOINS!
+           </h2> 
             <p className={styles.paragraph}>
-            Peter Coin is a project that channels the irreverent spirit of Peter Griffin from the iconic TV show "Family Guy.” It is here to shake up the crypto world with it's comical charm and a mission to reign supreme.
+              Brace yourself for a wild ride of laughter as $PETER Coin storms the crypto meme space.
 <br></br><br></br>
-Led by the one and only patriarch himself, Peter Coin promises to bring laughter and levity to the crypto space while taking the reins from other memecoins. <br></br> With Peter's legendary signature wit and charm, $PETER is more than just a digital currency—it's a cultural phenomenon.
-<br></br><br></br>
-Join Peter Coin as it takes the crypto meme world by storm, making waves with laughter for the community and establishing itself as the king of memecoins. <br></br> Get ready to ride the wave and experience the joy of dominance!            </p>
+Inspired by the legendary Peter Character, This Coin is not just a Currency; it's a cultural phenomenon.<br></br><br></br>
+Join the revolution, Ride the waves, And let memes fuel your crypto journey !</p>
           </div>
         
-          <div className={styles.imgContainer}>
-        
-            <Image className={styles.img}
-              src="/assets/images/peter-bull.gif"
-              alt="Discord"
-              width={600}
-              height={400}
-            />
           
-        </div>
       </div>
     </section>
   );
