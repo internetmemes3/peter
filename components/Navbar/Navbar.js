@@ -57,13 +57,7 @@ const Navbar = () => {
       
       </div>
      
-      <div className={styles.announcing}>
-      <Marquee speed={70} autoFill={true}>
-    <div className={styles.sliding} >
-        <span className={styles.announcementtext}> $PETER Presale is LIVE on Pinksale </span>
-      </div>
-      </Marquee>
-      </div>
+      
 
       <div className={styles.mobileMenu}>
         
@@ -72,7 +66,13 @@ const Navbar = () => {
         </div>
         
       </div>
-      
+      <div className={styles.announcing}>
+      <Marquee speed={70} autoFill={true}>
+    <div className={styles.sliding} >
+        <span className={styles.announcementtext}> $PETER Presale is LIVE on Pinksale </span>
+      </div>
+      </Marquee>
+      </div>
     </header>
     
   );
