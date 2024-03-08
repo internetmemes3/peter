@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
       
       <div data-aos="fade-left" data-aos-duration="1000" className={styles.peter}>
-      <Image src="/assets/images/peterlogo.png" width={400} height={400}       style={{
+      <Image src="/assets/images/peterlogo.png" width={300} height={300}       style={{
             width: '100%', 
             height: 'auto', 
           }}

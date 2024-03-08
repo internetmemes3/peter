@@ -17,11 +17,13 @@
 
   .iconContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
     gap: 20px; 
     margin-top: 20px;
-    margin-left: 100px;
-   }
+    margin-left: 70px;
+    
+  }
    
    .circleButton {
     border-radius: 50%;
@@ -86,15 +88,9 @@
     }
 
     .iconContainer {
-      display:inline-block;
-      justify-content: center;
-      margin-top: 20px;
-      margin-left: 40px;
-     }
+      margin-left: 1px;
+    }
 
-     .button {
-      margin-bottom: 20px;
-     }
     
   }
   
