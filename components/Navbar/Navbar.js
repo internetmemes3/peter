@@ -3,7 +3,6 @@ import Image from "next/image";
 import {Link} from 'react-scroll';
 import RenderMobileMenu from "./MobileMenu";
 import styles from "./Navbar.module.css";
-import Marquee from 'react-fast-marquee';
 
 
 
@@ -65,13 +64,6 @@ const Navbar = () => {
           <RenderMobileMenu />
         </div>
         
-      </div>
-      <div className={styles.announcing}>
-      <Marquee speed={70} autoFill={true}>
-    <div className={styles.sliding} >
-        <span className={styles.announcementtext}> $PETER Presale is LIVE on Pinksale </span>
-      </div>
-      </Marquee>
       </div>
     </header>
     

@@ -20,7 +20,7 @@
     justify-content: center;
     gap: 20px; 
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 100px;
    }
    
    .circleButton {
@@ -84,6 +84,17 @@
     .peter {
       width: 40%;
     }
+
+    .iconContainer {
+      display:inline-block;
+      justify-content: center;
+      margin-top: 20px;
+      margin-left: 40px;
+     }
+
+     .button {
+      margin-bottom: 20px;
+     }
     
   }
   
